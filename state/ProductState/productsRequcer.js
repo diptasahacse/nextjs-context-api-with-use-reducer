@@ -30,24 +30,6 @@ export const productsReducer = (state, action) => {
         error: true,
       };
     case actionTypes.ADD_TO_CART:
-      let ifExist = state.cart.find(item => item.id === action.payload.id)
-      let item = {}
-     if(ifExist){
-      console.log(ifExist)
-
-      item = {
-        id: ifExist.id,
-        quantity: 1
-      }
-
-     }else{
-      // item = {
-      //   id: action.payload.id,
-      //   quantity: 1
-      // }
-
-     }
-
       return {
         ...state,
         cart: [...state.cart, action.payload],
