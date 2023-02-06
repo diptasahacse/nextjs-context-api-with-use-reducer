@@ -33,8 +33,5 @@ const ProductProvider = ({ children }) => {
     </PRODUCT_CONTEXT.Provider>
   );
 };
-export const useProducts = () => {
-  const context = useContext(PRODUCT_CONTEXT);
-  return context;
-};
+
 export default ProductProvider;

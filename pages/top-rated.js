@@ -1,6 +1,7 @@
 import React from 'react'
 import ProductCard from '../components/Layout/ProductCard';
-import { useProducts } from '../provider/ProductProvider';
+import { useProducts } from '../hooks/useProducts';
+
 
 const topRated = () => {
     const {

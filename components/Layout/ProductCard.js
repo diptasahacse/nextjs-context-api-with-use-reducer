@@ -1,5 +1,6 @@
 import React from "react";
-import { useProducts } from "../../provider/ProductProvider";
+import { useProducts } from "../../hooks/useProducts";
+
 import { actionTypes } from "../../state/ProductState/actionTypes";
 
 const ProductCard = ({ item }) => {

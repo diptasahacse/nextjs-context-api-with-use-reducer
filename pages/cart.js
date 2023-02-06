@@ -2,7 +2,8 @@ import React from 'react'
 import { Table } from 'react-bootstrap';
 import CartItem from '../components/CartItem';
 import ProductCard from '../components/Layout/ProductCard';
-import { useProducts } from '../provider/ProductProvider';
+import { useProducts } from '../hooks/useProducts';
+
 
 const cart = () => {
     const { state:{cart} } = useProducts();

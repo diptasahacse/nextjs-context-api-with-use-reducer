@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useEffect } from "react";
 import MyNav from "../components/Layout/MyNav";
 import ProductCard from "../components/Layout/ProductCard";
-import { useProducts } from "../provider/ProductProvider";
+import { useProducts } from "../hooks/useProducts";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
